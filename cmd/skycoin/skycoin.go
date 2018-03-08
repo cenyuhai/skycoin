@@ -55,27 +55,21 @@ var (
 	// GenesisSignatureStr hex string of genesis signature
 	GenesisSignatureStr = "eb10468d10054d15f2b6f8946cd46797779aa20a7617ceb4be884189f219bc9a164e56a5b9f7bec392a804ff3740210348d73db77a37adb542a8e08d429ac92700"
 	// GenesisAddressStr genesis address string
-	GenesisAddressStr = "2jBbGxZRGoQG1mqhPBnXnLTxK6oxsTf8os6"
+	GenesisAddressStr = "AHbDMVhtnWokvbvnkrXB3M4TXLr6guPZgi"
 	// BlockchainPubkeyStr pubic key string
-	BlockchainPubkeyStr = "0328c576d3f420e7682058a981173a4b374c7cc5ff55bf394d3cf57059bbe6456a"
+	BlockchainPubkeyStr = "03a4db4763d06af0be94bbce18e5587164a94f9014584c7c9f56e3c245a8445890"
 	// BlockchainSeckeyStr empty private key string
-	BlockchainSeckeyStr = ""
+	BlockchainSeckeyStr = "43e4215545d872e25c7c88dc2709f7ddae6ccc3eec291496207e9797eac58078"
 
 	// GenesisTimestamp genesis block create unix time
 	GenesisTimestamp uint64 = 1426562704
 	// GenesisCoinVolume represents the coin capacity
-	GenesisCoinVolume uint64 = 100e12
+	GenesisCoinVolume uint64 = 10e15
 
 	// DefaultConnections the default trust node addresses
 	DefaultConnections = []string{
-		"118.178.135.93:6000",
-		"47.88.33.156:6000",
-		"121.41.103.148:6000",
-		"120.77.69.188:6000",
-		"104.237.142.206:6000",
-		"176.58.126.224:6000",
-		"172.104.85.6:6000",
-		"139.162.7.132:6000",
+		"120.92.165.200:6000",
+		"35.201.160.163:6000",
 	}
 )
 
@@ -315,7 +309,7 @@ var devConfig = Config{
 	WalletDirectory: "",
 
 	// Centralized network configuration
-	RunMaster:        false,
+	RunMaster:        true,
 	BlockchainPubkey: cipher.PubKey{},
 	BlockchainSeckey: cipher.SecKey{},
 
