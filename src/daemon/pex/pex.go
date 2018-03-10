@@ -30,7 +30,7 @@ import (
 
 const (
 	// DefaultPeerListURL is the default URL to download remote peers list from, if enabled
-	DefaultPeerListURL = "https://github.com/cenyuhai/skycoin/blob/PlayAirCoin/peers.txt"
+	DefaultPeerListURL = "http://47.97.102.131/test/5/peers.txt"
 	// PeerDatabaseFilename filename for disk-cached peers
 	PeerDatabaseFilename = "peers.txt"
 	// MaxPeerRetryTimes is the maximum number of times to retry a peer

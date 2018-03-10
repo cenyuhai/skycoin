@@ -276,7 +276,7 @@ var devConfig = Config{
 	// MaxOutgoingConnections is the maximum outgoing connections allowed.
 	MaxOutgoingConnections: 16,
 	DownloadPeerList:       false,
-	PeerListURL:            "https://github.com/cenyuhai/skycoin/blob/PlayAirCoin/peers.txt",
+	PeerListURL:            "http://47.97.102.131/test/5/peers.txt",
 	// How often to make outgoing connections, in seconds
 	OutgoingConnectionsRate: time.Second * 5,
 	PeerlistSize:            65535,
