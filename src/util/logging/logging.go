@@ -67,8 +67,8 @@ func LogLevel(level string) (logging.Level, error) {
 // DevLogConfig default development config for logging
 func DevLogConfig(modules []string) *LogConfig {
 	return &LogConfig{
-		level:   DEBUG,   // int
-		Level:   "debug", // string
+		level:   ERROR,   // int
+		Level:   "error", // string
 		Modules: modules,
 		Format:  defaultLogFormat,
 		Colors:  true,

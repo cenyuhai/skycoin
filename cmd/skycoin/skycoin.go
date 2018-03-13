@@ -222,9 +222,9 @@ func (c *Config) register() {
 		"Choices are: debug, info, notice, warning, error, critical")
 	flag.BoolVar(&c.ColorLog, "color-log", c.ColorLog,
 		"Add terminal colors to log output")
-	flag.BoolVar(&c.DisablePingPong, "no-ping-log", false,
+	flag.BoolVar(&c.DisablePingPong, "no-ping-log", true,
 		`disable "reply to ping" and "received pong" log messages`)
-	flag.BoolVar(&c.Logtofile, "logtofile", false, "log to file")
+	flag.BoolVar(&c.Logtofile, "logtofile", true, "log to file")
 	flag.StringVar(&c.GUIDirectory, "gui-dir", c.GUIDirectory,
 		"static content directory for the html gui")
 
@@ -259,7 +259,7 @@ func (c *Config) register() {
 
 var devConfig = Config{
 	// Disable peer exchange
-	DisablePEX: false,
+	DisablePEX: true,
 	// Don't make any outgoing connections
 	DisableOutgoingConnections: false,
 	// Don't allowing incoming connections
