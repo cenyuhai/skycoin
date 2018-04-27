@@ -132,7 +132,7 @@ function createWindow(url) {
   win = new BrowserWindow({
     width: 1200,
     height: 900,
-    title: 'Skycoin',
+    title: 'BiGameChain',
     nodeIntegration: false,
     webPreferences: {
       webgl: false,
