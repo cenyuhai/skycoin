@@ -8,7 +8,7 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class ApiService {
 
-  private url = 'http://wallets.bigame.top/'; // production
+  private url = 'http://47.75.68.35/'; // production
   // private url = '/api/'; // test
 
   constructor(private http: Http) { }
